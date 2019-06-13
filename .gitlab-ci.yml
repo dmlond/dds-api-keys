@@ -9,8 +9,8 @@ variables:
   LOG_LEVEL: "info"
 
 include:
-  - project: 'ori-rad/kubernetes_deployment_pipeline'
-    file: '/auto_version.yml'
+  - project: 'utility/images/auto-version'
+    file: '/auto-version.yml'
   - project: 'ori-rad/kubernetes_deployment_pipeline'
     file: '/ori-deployments.yml'
   - project: 'utility/images/image-scanner'
@@ -78,8 +78,6 @@ increment_version:
   stage: publish
   only:
     - master
-  tags:
-    - docker
 
 publish_development_image:
   stage: publish
