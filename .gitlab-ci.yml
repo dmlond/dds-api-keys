@@ -11,8 +11,8 @@ variables:
 include:
   - project: 'utility/images/auto-version'
     file: '/auto-version.yml'
-  - project: 'ori-rad/kubernetes_deployment_pipeline'
-    file: '/ori-deployments.yml'
+  - project: 'ori-rad/ci-pipeline-utilities/deployment'
+    file: '/deployment.yml'
   - project: 'utility/images/image-scanner'
     file: '/image-scanner.yml'
 
